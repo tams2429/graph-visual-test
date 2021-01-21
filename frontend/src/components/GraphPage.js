@@ -1,11 +1,27 @@
 import React from 'react'
+import { countryData } from '../data/CountryData'
+import { RadialBarChart, RadialBar, Legend, Tooltip } from 'recharts'
 
 const GraphPage = () => {
 
-
+  console.log(countryData)
 
   return (
-    <h1>This is the Graph page</h1>
+    <RadialBarChart
+      width={700}
+      height={500}
+      innerRadius="10%"
+      outerRadius="90%"
+      data={countryData}
+    >
+      <RadialBar
+        dataKey='Count'
+        background
+
+      />
+      <Legend width={100} height={190} layout='vertical' verticalAlign='middle' align="right" />
+      <Tooltip offset={10}/>
+    </RadialBarChart>
   )
 }
 

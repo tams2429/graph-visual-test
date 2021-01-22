@@ -19,7 +19,7 @@ const CitiesPage = () => {
         background
 
       />
-      <Legend width={100} height={190} layout='vertical' verticalAlign='middle' align="right" />
+      <Legend width={80} height={490} layout='vertical' verticalAlign='middle' align="right" />
       <Tooltip offset={10}/>
     </RadialBarChart>
   )

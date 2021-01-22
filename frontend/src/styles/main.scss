@@ -61,3 +61,20 @@ hr {
     }
   }
 }
+
+.btn-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  button {
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  button:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+    background-color: green;
+  }
+}
+

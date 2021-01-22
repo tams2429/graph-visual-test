@@ -4,8 +4,6 @@ import { RadialBarChart, RadialBar, Legend, Tooltip } from 'recharts'
 
 const CitiesPage = () => {
 
-  console.log(countryData)
-
   return (
     <RadialBarChart
       width={700}
@@ -17,7 +15,6 @@ const CitiesPage = () => {
       <RadialBar
         dataKey='Count'
         background
-
       />
       <Legend width={80} height={490} layout='vertical' verticalAlign='middle' align="right" />
       <Tooltip offset={10}/>

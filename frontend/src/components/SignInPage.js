@@ -46,7 +46,6 @@ class SignInPage extends React.Component {
       </div>
     )
   }
-
 }
 
 export default SignInPage

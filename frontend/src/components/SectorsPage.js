@@ -1,27 +1,22 @@
 import React from 'react'
-import { countryData } from '../data/CountryData'
-import { RadialBarChart, RadialBar, Legend, Tooltip } from 'recharts'
+import { sectorData } from '../data/SectorData'
+import { FunnelChart, Tooltip, Funnel, LabelList } from 'recharts'
 
 const SectorsPage = () => {
 
-  console.log(countryData)
-
   return (
-    <RadialBarChart
+    <FunnelChart
       width={700}
-      height={500}
-      innerRadius="10%"
-      outerRadius="90%"
-      data={countryData}
+      height={700}
     >
-      <RadialBar
-        dataKey='Count'
-        background
-
-      />
-      <Legend width={100} height={190} layout='vertical' verticalAlign='middle' align="right" />
+      <Funnel
+        data={sectorData}
+        dataKey="Count"
+      >
+        <LabelList position="right" fill="#000" stroke="none" dataKey="name" offset={10}/>
+      </Funnel>
       <Tooltip offset={10}/>
-    </RadialBarChart>
+    </FunnelChart>
   )
 }
 

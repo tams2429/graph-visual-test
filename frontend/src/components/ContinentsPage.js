@@ -4,8 +4,6 @@ import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, 
 
 const ContinentsPage = () => {
 
-  console.log(continentData)
-
   return (
     <RadarChart
       width={800}

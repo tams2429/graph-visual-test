@@ -1,27 +1,27 @@
 import React from 'react'
-import { countryData } from '../data/CountryData'
-import { RadialBarChart, RadialBar, Legend, Tooltip } from 'recharts'
+import { continentData } from '../data/ContinentData'
+import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend, Tooltip } from 'recharts'
 
 const ContinentsPage = () => {
 
-  console.log(countryData)
+  console.log(continentData)
 
   return (
-    <RadialBarChart
-      width={700}
-      height={500}
+    <RadarChart
+      width={800}
+      height={700}
       innerRadius="10%"
       outerRadius="90%"
-      data={countryData}
+      data={continentData}
+      margin={{ top: 100, right: 5, bottom: 5, left: 5 }}
     >
-      <RadialBar
-        dataKey='Count'
-        background
-
-      />
-      <Legend width={100} height={190} layout='vertical' verticalAlign='middle' align="right" />
+      <PolarGrid gridType="circle" />
+      <PolarAngleAxis dataKey="name"/>
+      <PolarRadiusAxis angle={50} domain={[0, 320]} />
+      <Radar dataKey="Count" stroke="#8884d8" fill="#8884d8" fillOpacity={0.4} />
+      <Legend />
       <Tooltip offset={10}/>
-    </RadialBarChart>
+    </RadarChart>
   )
 }
 

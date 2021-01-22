@@ -2,7 +2,7 @@ import React from 'react'
 import { countryData } from '../data/CountryData'
 import { RadialBarChart, RadialBar, Legend, Tooltip } from 'recharts'
 
-const GraphPage = () => {
+const ContinentsPage = () => {
 
   console.log(countryData)
 
@@ -25,4 +25,4 @@ const GraphPage = () => {
   )
 }
 
-export default GraphPage
+export default ContinentsPage

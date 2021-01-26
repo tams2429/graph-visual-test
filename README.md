@@ -1,4 +1,4 @@
-# graph-visual-test
+# graph-visual-test 📊
 A project to test unconventional ways to visually present data
 
 ## Table of Contents 📖
@@ -14,6 +14,8 @@ A project to test unconventional ways to visually present data
 A simple, **web application** that takes **arbitrary login details** and allows the user to **choose** a **set of data** that is **visually represented** with a **graph**. Each set of data has been portrayed with an **'out of the ordinary' graph**.
 
 The data has been provided as part of a **coding task** to visualise the representation of **investment related key words**.
+
+![Working Gif](./ReadmeResources/GraphVisualTest-Gif.gif)
 
 ## Technologies 💻
 
@@ -48,6 +50,8 @@ The data has been provided as part of a **coding task** to visualise the represe
 - **GitHub repository** containing **project code**
 - **Readme document** containing **thought processes** and **any assumptions made**
 - A **simple**, **web application** which takes a **'username' and 'password'**, upon **successful log in**, user can see **data represented** on a **graph**
+
+
 
 ## Wins 🏆
 
